@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style type="text/css">
+    table,th,td{
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+    <input type="number" value="0">
+    <button id="add">+</button>
+    <br/>
+    <br/>
+    <br/>
+    <h1 id="result"></h1>
+    <br/>
+    <br>
+    <br>
+    <table id="display" >
+      <tr>
+        <th>current penalty value</th>
+        <th>updated penalty value</th>
+      </tr>
+      <tr >
+        <td id="data"></td>
+        <td id="update"></td>
+      </tr>
+    </table>
+    <h1 id="result"></h1>
+  <script>
+    let btnAdd = document.querySelector('#add');
+    let tableData = document.querySelector('#data');
+    let tableData2 = document.querySelector('#update');
+let input = document.querySelector('input');
+tableData.innerHTML = input.value;
+
+btnAdd.addEventListener('click', () =>{
+  input.value = parseInt(input.value) + 10;
+
+document.querySelector("#result").innerHTML = input.value;
+tableData2.innerHTML = document.querySelector("#result").innerHTML ;
+document.querySelector('input').value =" ";
+
+});
+  </script>
+</body>
+</html>

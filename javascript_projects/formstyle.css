@@ -1,0 +1,19 @@
+
+form{
+	text-align: center;
+    background-color: burlywood;
+    width: 50%;
+    margin: auto;
+    height: 30vh;
+}
+#data{
+	height: 25px;
+}
+button{
+	height: 30px;
+}
+#demo{
+	font-weight: bold;
+    display: block;
+    margin-left: -195px;
+}

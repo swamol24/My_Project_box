@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>practice layout</title>
+	<link rel="stylesheet" type="text/css" href="css/practice.css">
+<link href="https://fonts.googleapis.com/css2?family=Flamenco&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<script src="https://kit.fontawesome.com/44798d6b21.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="row clearfix">
+				<img src="image/logo.png" class="logo">
+				<ul class="main-nav animated slideInDown" id="check-class">
+					<li><a href="#">home</a></li>
+					<li><a href="#">gellary</a></li>
+					<li><a href="#">contact us</a></li>
+					<li><a href="#">about us</a></li>
+				</ul>
+				<a href="#" class="mobile-icon"  onclick="slideshow()"><i class="fa-solid fa-bars"></i></a>
+			</div>
+		</nav>
+		<div class="main-content">
+		<h1> welcome to <span class="colorchange">swati's world</span>.</h1>
+			<a href="#" class="button btn1">about me</a>
+		    <a href="#" class="button btn2">contact me</a>
+	
+		</div>
+		<div class="parent">
+			<br>
+			<div class="boy">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<br>
+		<div class="girl">
+			<a href="#">
+				<img src="C:\Users\Swati\Pictures\Camera Roll\WIN_20221002_05_52_42_Pro.jpg">
+			</a>
+	</div>
+</div>
+</header>
+<script type="text/javascript">
+	function slideshow(){
+var x = document.getElementById("check-class");
+if(x.style.display === "none") {
+	x.style.display = "block";
+}
+else{
+	x.style.display ="none";
+	}
+}
+</script>
+</body>
+</html>

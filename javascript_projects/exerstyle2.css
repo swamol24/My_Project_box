@@ -1,0 +1,30 @@
+body{
+    width: 400px;
+    margin: auto;
+    padding: 10px;
+}
+.grid-container{
+	    display: grid;
+    grid-template-columns: auto auto;
+    background-color: aquamarine;
+    padding: 10px;
+
+
+}
+.grid-items{
+	background-color: coral;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid gainsboro;
+    font-size: 20px;
+}
+.grid-items:hover{
+    border: 2px solid blue;
+}
+.forest {
+    background-color: green;
+}
+
+.field {
+    background-color: white;
+}

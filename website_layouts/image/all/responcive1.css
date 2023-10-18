@@ -1,0 +1,82 @@
+@media only screen and (max-width: 600px) {
+    body {
+      /*background-color:rgb(128, 117, 117);*/
+      background-image: linear-gradient(skyblue,forestgreen);
+    }
+    
+    form{
+        height: 1048px;
+        background-image: linear-gradient(skyblue,forestgreen);
+    }
+    label{
+        float: left;
+    font-size: 19px;
+    font-family: sans-serif;
+    color: black;
+    }
+    input[type=text]{
+        border-radius: 16px;
+        font-size: 20px;
+    }
+    .row1{
+        width: 91%;
+    margin-bottom: 7%;
+    }
+    .colum1{
+        width: 91%;
+    }
+    .row2{
+        width: 91%;
+    margin-bottom: 7%;
+    }
+    .colum2{
+        width: 91%;
+    
+    }
+    .row3{
+        width: 91%;
+    margin-left: 5%;
+    margin-bottom: 7%;
+    }
+    .colum3{
+        width: 91%;
+    margin-left: 5%;
+    margin-bottom: 4%;
+    }
+    .row4{
+        width: 91%;
+    margin-bottom: 4%;
+    }
+    .colum4{
+        width: 91%;
+    margin-bottom: 4%;
+    }
+    .row5{
+        width: 91%;
+    margin-bottom: 4%;
+    }
+    .colum5{
+        width: 91%;
+    margin-left: 5%;
+    }
+    select{
+        
+        height: 57px;
+        border-radius: 16px;
+        width: 100%;
+        color: lightslategray;
+        font-size: 16px;
+        
+        margin: 8px 0;
+        
+        margin-left: -6%;
+    }
+    .row6{
+        width:91%;
+        margin-left:4%;
+    }
+    .colum6{
+       width: 91%;
+       margin-left: 4%;
+}
+}

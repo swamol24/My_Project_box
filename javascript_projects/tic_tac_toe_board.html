@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tic Tac Toe Board</title>
+	<style type="text/css">
+		.container{
+			display: grid;
+			grid-template-columns: auto auto auto;
+			height: 300px;
+			width: 300px;
+
+		}
+		.box{
+			border: 1px solid black;
+			padding: 5px;
+			font-size: 50px;
+		}
+
+
+	</style>
+
+</head>
+<body>
+	<center><h1>Tic Tac Toe Game Board</h1></center>
+	<center><div class="container">
+     		<div id="1" class="box" onclick="ticTac(1)"></div>
+		<div id="2" class="box" onclick="ticTac(2)"></div>
+		<div id="3" class="box" onclick="ticTac(3)"></div>
+		<div id="4" class="box" onclick="ticTac(4)"></div>
+		<div id="5" class="box" onclick="ticTac(5)"></div>
+		<div id="6" class="box" onclick="ticTac(6)"></div>
+		<div id="7" class="box" onclick="ticTac(7)"></div>
+		<div id="8" class="box" onclick="ticTac(8)"></div>
+		<div id="9" class="box" onclick="ticTac(9)"></div>
+	</div></center>
+
+<script type="text/javascript">
+	var counter = 0;
+	function ticTac(id){
+		counter++;
+
+		var firstClick = document.getElementById(id);
+		/*if(counter % 2 !== 0){
+		firstClick.innerText = "x" ;
+	}else{
+		firstClick.innerText = "0";
+	}*/
+		if(firstClick.innerText == ""){
+			firstClick.innerText = counter % 2 !== 0 ? "x" : "0";	
+      if(counter >= 9)
+		{
+			//seTimeout(function name,timeout);
+			setTimeout(reset,1000);
+			//reset();
+		}
+
+		}
+	
+	}
+function reset(){
+	counter = 0;
+	var list = document.getElementsByClassName("box");
+	for(var i =0;i < list.length;i++){
+		list[i].innerText ="";
+	}
+}
+		
+</script>
+</body>
+</html>

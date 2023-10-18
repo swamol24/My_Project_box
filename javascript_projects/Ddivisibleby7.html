@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>divisible count by 7</title>
+</head>
+<body>
+<script type="text/javascript">
+	const divisibleBy7 = (num1,num2) =>{
+    let count = 0;
+    if(num1 > num2){
+    	const temp =num1;
+    	num1 = num2;
+    	num2 = temp;
+    }
+    for(let i=num1;i<=num2;i++){
+    	if(i % 7 === 0){
+    		count++;
+    	}
+    }
+    return count;
+	};
+	
+	console.log(divisibleBy7(100,10));
+</script>
+</body>
+</html>

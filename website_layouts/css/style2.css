@@ -1,0 +1,510 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
+img{
+  width: 100%;
+}
+.container{
+  width: 1200px;
+  margin: auto;
+}
+.top-section{
+    
+    background-size:cover;
+    height:534px;
+  
+}
+header{
+  
+    width: 1200px;
+    margin: auto;
+    position: absolute;
+    
+    color:rgb(220, 220, 231);
+}
+header h6{
+  display: inline-block;
+  padding: 31px;
+   margin-left: 52px
+}
+.section::after
+{
+  content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    background-color: navy;
+    z-index: -1;
+}
+.img3{
+  width: 100%;
+  position: absolute;
+  height: 600px;
+
+}
+
+.fab{
+  font-size: 24px;
+  display:inline-block;
+  
+}
+.logo{
+    
+    padding-top: 73px;
+    z-index: 1;
+    position: relative;
+    }
+    .img1{
+      width: 21%;
+      position: absolute;
+      padding-top: 7px;
+    }
+.nav {
+  background-color: white;
+    text-align: right;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    
+}
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .nav li {
+    display: inline-block;
+    font-size: 13px;
+    padding: 20px;
+    font-family: emoji;
+  }
+  .nav li:hover{
+    background-color: forestgreen;
+  }
+  
+
+  h1{
+    text-align: center;
+    padding-top: 91px;
+    font-size: 61px;
+    color: white;
+    
+
+  }
+  h5{
+    text-align: center;
+    color: white;
+    
+    z-index: 1;
+    margin-top: -19px;
+  }
+  .block{
+    text-align: center;
+    position: relative;
+  }
+  .button{
+    border: 1px solid;
+    color: white;
+    padding: 8px 11px;
+    text-decoration: none;
+    font-family: system-ui;
+  }
+  .button:hover
+  {background-color:forestgreen;
+  }
+
+  .section2
+  {
+    width: 1405px;
+    margin-left: 84px;
+    box-shadow: -1px 12px 25px 5px #e1e4e9;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+  }
+  .box1{
+    width: 460px;
+    text-align: center;
+    padding: 86px 103px;
+    color: navy;
+    font-family: system-ui;
+    background-color: white;
+}
+  .box2{
+    width: 460px;
+    text-align: center;
+    padding: 86px 103px;
+    background-size: cover;
+    font-family: system-ui;
+    color: white;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/001/330/263/original/stock-market-graph-trading-chart-for-business-and-finance-free-vector.jpg");  
+  }
+  
+  .box3{
+    width: 460px;
+    background-color: white;
+    font-family: system-ui;
+    text-align: center;
+    padding: 86px 103px;
+    color:navy;
+    display: inline-block;
+}
+.section3{
+  width: 216px;
+    text-align: left;
+    margin-top: 494px;
+    margin-left: 130px;
+    color: navy;
+    font-family:system-ui;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.section4{
+  width: 216px;
+  text-align: left;
+  margin-top: -273px;
+  margin-left: 1190px;
+  color: navy;
+  font-family: system-ui; 
+  display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.img2
+{
+  width: 450px;
+    margin-left: -669px;
+    margin-top: -382px;
+}
+.section5{
+  background-image: url(https://citizenside.com/wp-content/uploads/2022/07/Man-and-woman-discussing-work-1170x780.jpg);
+  margin-top: -24px;
+}
+.block2{
+  margin-left: 57px;
+}  
+.nav1{
+  margin-left: -57px;
+}
+.nav2{
+  margin-left: -48px;
+}
+.nav1 li {
+  display: inline-block;
+    font-size: 83px;
+    padding: 19px;
+    font-family: fantasy;
+    color: forestgreen;
+}
+.nav2 li {
+  display: inline-block;
+    font-size: 16px;
+    padding: 13px;
+    font-family: system-ui;
+    color: white;
+    padding-top: -17px
+}
+h2{
+  font-size: 37px;
+    font-family: system-ui;
+    color: white;
+}
+.section5 p {
+  color: white;
+}
+.section6{
+  text-align: center;
+  padding:64px;
+}
+.section6 h3{
+  font-family: sans-serif;
+    font-size: 26px;
+    color: midnightblue;
+}
+.section6 p{
+  color: midnightblue;
+
+}
+.img4{
+  width: 114px;
+  height: 105px;
+  border-radius: 55%;
+  
+}
+.img5{
+  width: 163px;
+    border-radius: 46%;
+    height: 160px
+}
+.img6{
+  width: 114px;
+  height: 105px;
+  border-radius: 55%;
+  
+}
+.img7{
+  width: 80px;
+}
+.img8{
+  width: 55px;
+}
+  .section6 h4{
+    font-size: 25px;
+    color: midnightblue;
+    font-family: system-ui;
+    margin: 0px;
+  }
+  .section6 h5 {
+    margin: 0px;
+    color: midnightblue;
+    font-family: ui-monospace;
+    font-size: 18px;
+  }
+ .section7{
+  background-image: url(https://www.shutterstock.com/image-photo/call-center-service-portrait-customer-260nw-2070073430.jpg);
+  background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    
+    flex-flow: wrap;
+ }
+.block3{
+  margin-left: 21px;
+    padding: 74px;
+}
+.section7 p{
+  font-family: math;
+    color: white;
+}
+.section7 h2{
+  font-size: 40px;
+    font-family: system-ui;
+    color: white;
+}
+.section8 h2{
+  text-align: center;
+  color: midnightblue;
+  font-family: system-ui;
+}
+.img9{
+  width: 250px;
+    height: 200px;
+}
+.img10{
+  width: 250px;
+    height: 200px;
+}
+.fourdiv{
+  display: flex;
+  flex-wrap: wrap;
+}
+.one{
+
+  margin-left: 225px;
+}
+.two{
+  
+  width: 250px;
+  
+  }
+
+.four{
+  width: 250px;
+}
+.section8 h6{
+  margin-left: 20px;
+  color:midnightblue;
+}
+.section8 h3{
+  margin-left: 20px;
+  color:midnightblue;
+  font-family: system-ui;
+}
+
+.section8 h5{
+  margin-left: -131px;
+    color: green;
+    padding: 14px;
+    font-family: system-ui;
+}
+.formblock{
+  margin-left: 730px;
+  margin-top: -312px;
+  background-color: #0c3261;
+  width: 281px;
+  height: 285px;
+  padding: 1px 1px 15px 25px;
+}
+.formblock h4{
+  color: white;
+    font-family: system-ui;
+}
+select{
+  width: 231px;
+    height: 43px;
+    font-family: revert;
+    margin-bottom: 6px;
+    padding: 10px;
+}
+input[type=text]{
+  display: block;
+    width: 231px;
+    height: 43px;
+    font-family: revert;
+    margin-bottom: 6px;
+    padding: 21px;
+    font-size: 15px;
+}
+.five
+{
+  height: 127px;
+    background-color: lightgray;
+    margin-top: 101px;
+}
+
+.a{
+width:200px;
+margin: 72px;
+top:-88px;
+position: relative;
+left: 90px;
+}
+.b{width:100px;
+  margin: 72px;
+  top:-58px;
+  position: relative;
+  left:32px;
+}
+.c{width:130px;
+  margin: 72px;
+top:-67px;
+  position: relative;
+}
+.d{
+  width:150px;
+  margin: 72px;
+  top:-72px;
+  position: relative;
+  right: 32px;
+}
+.e{
+  width:150px;
+  margin: 72px;
+top:-77px;
+  position: relative;
+  right:75px;
+}
+.colum1 img{
+  width: 222px;
+}
+.section9
+{
+  background-color: cadetblue;
+  color: white;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 43px;
+  margin-bottom: -25px;
+}
+.colum2{
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 56px;
+    line-height: 1.5;
+    margin-left: 26px;
+}
+.colum3{
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 56px;
+    line-height: 1.5;
+    margin-left: 26px;
+}
+.colum4{
+  margin-left: 35px;
+}
+.colum5{
+  margin-left: 28px;
+}
+
+.section9 p{
+  font-family: system-ui;
+    font-size: 13px;
+}
+.btn
+{
+  display: block;
+  width: 229px;
+  font-family: ui-sans-serif;
+  text-decoration: none;
+  color: white;
+  height: 41px;
+  text-align: center;
+  background-color: gray;
+  padding: 19px;
+  margin: 13px;
+  margin-left: 1px;
+}
+a:hover{
+  color:green;
+}
+.btn:hover
+{
+  background-color: forestgreen;
+}
+
+.section9 h4{
+  font-size: 20px;
+  font-family: system-ui;
+}
+
+
+/*footer{
+  height: 40px;
+    background-color: #0b1c2e;
+    margin-left: -255px;
+}*/
+.section10{
+background-color: #0b1c2e;
+}
+footer h6{
+  padding: 12px;
+    margin-left: 281px;
+    color: #7498c9;
+}
+.section10 h6{
+  margin-left: 282px;
+  color:  antiquewhite;
+}
+footer .fa-brands {
+  font-weight: 100;
+    background-color: #233343;
+    width: 35px;
+    height: 36px;
+    padding: 10px 3px 3px 10px;
+}
+footer .fa-brands:hover 
+{
+  background-color: green;
+}
+.endicons{
+  margin-left: 1074px;
+    margin-top: -60px;
+}
+

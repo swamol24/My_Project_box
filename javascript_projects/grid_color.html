@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New Form</title>
+  <link rel="stylesheet" type="text/css" href="../new-projeect/exerstyle2.css">
+</head>
+<body>
+  
+  <div class="grid-container">
+    <div class="grid-items">1</div>
+    <div class="grid-items">2</div>
+    <div class="grid-items">3</div>
+    <div class="grid-items">4</div>
+    <div class="grid-items">5</div>
+    <div class="grid-items">6</div>
+    <div class="grid-items">7</div>
+    <div class="grid-items">8</div>
+    <div class="grid-items">9</div>
+    <div class="grid-items">10</div>
+  </div>
+  <script type="text/javascript"> 
+ const divs = document.querySelectorAll('.grid-items');
+Array.from(divs).forEach(div => {
+    div.addEventListener('click', classToggler);
+});
+
+const colors = ['forest', 'field'];
+let enumerator = 0;
+
+function classToggler() {
+if (enumerator < colors.length+1){
+    enumerator+=1;
+  }
+ else {enumerator=0};
+
+
+this.classList.add(colors[enumerator]);
+this.classList.remove(colors[enumerator-1]);
+//const yellows = document.querySelectorAll('.beach')
+//const infoLabel = document.querySelector('#info')
+//infoLabel.innerHTML = "There are " + yellows.length + " yellow box(es)." 
+};
+</script>
+</body>

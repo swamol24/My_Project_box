@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New Form</title>
+  <link rel="stylesheet" type="text/css" href="../new-projeect/formstyle.css">
+</head>
+<body>
+<form>
+<h2>Form Validation</h2>
+
+<input id="data">
+
+<button  type="button" onclick="myFunction()">Click Me</button>
+
+<p id="demo"></p>
+</form>
+<script>
+function myFunction() {
+  // Get the value of the input field with id="data"
+  let x = document.getElementById("data").value;
+  let text;
+  if (isNaN(x)) {
+    text=x;
+  } else {
+    text=x;
+  }
+  document.getElementById("demo").innerHTML = text;
+  document.getElementById("data").value = "";
+}
+</script>
+
+</body>
+</html> 

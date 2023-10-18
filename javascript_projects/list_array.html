@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Display List </title>
+</head>
+<style type="text/css">
+	.container{
+		background: lightsalmon;
+		width: 500px;
+		margin: auto;
+		height:300px;
+		border: 1px solid black;
+	}
+	.block{
+		padding: 30px 30px;
+	}
+	input[type=text]{
+		height: 30px;
+		font-size: 15px;
+	}
+	button{
+		height: 35px;
+		font-size: 15px;
+	}
+
+</style>
+<body>
+<div class="container">
+	<div class="block">
+	<input type="text" id="input" placeholder="Enter list item here.. " />
+	<button id="submit" >Submit</button>
+<ul id="list"></ul>
+</div>
+</div>
+	
+<script type="text/javascript">
+	function addToList() {
+
+	let inputValue = document.getElementById("input").value;
+  document.getElementById("list").innerHTML = document.getElementById("list").innerHTML + "<li>"+ inputValue + "</li>";
+  document.getElementById("input").value = "";
+}
+	document.getElementById("submit").addEventListener("click",addToList);
+</script>
+</body>
+</html>

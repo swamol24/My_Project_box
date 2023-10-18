@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+     padding: 0px;
+}
+ body{background-color: lightgray;
+        
+
+}
+ #main{
+    background-color: white;
+    margin: auto;
+    width: 1200px;
+    height: auto;
+}
+ #header{
+    background-color: lightpink;
+     height: 70px;
+}
+ #header h1{
+    color: white;
+     text-align: center;
+     font-weight: 600;
+     line-height: 2;
+}
+ #date-wrap{
+    background-color: lightsalmon;
+     height: 50px;
+     line-height: 3 
+}
+ label{font-size: 20px;}
+input{ height: 20px;}
+ #table-data{margin: auto;}
+ #content{
+     margin-top: 32px;
+}
+#table-data th{
+    background: lightgreen;
+    padding: 6px;
+     color: white;
+  }
+ tr:nth-child(odd){
+  background: lightgoldenrodyellow;
+}

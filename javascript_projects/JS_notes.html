@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript notes</title>
+</head>
+<body>
+<h1 id="text">Javascript Notes<span>book</span></h1>
+<!--DOM commands
+	document.getElementById("text");
+	document.getElementById("text").innerText;
+	document.getElementById("text").innerHTML; -->
+
+	<script type="text/javascript">
+		document.write('hello <br><br>');
+		document.write('<i><b>hello again</b></i><br>');
+
+		// JS variables
+
+		var a ="i'm swati  ";//var can redeclare but let cannot reclare but value can assign
+		let b = "i'm swati  ";
+		const c = "hello";//in const variable neither assigen value again nor redeclare value
+		document.write(a );
+		document.write(b );
+		document.write(c);
+
+		//javascript datatypes
+
+var x = "i'm swati";
+x = 34;
+x = false;
+x = undefined;
+x = ["html","css","js"];
+x = {
+	name : "swati",
+	lastname : "tupat"
+}
+document.write('<br>');
+document.write(x);
+document.write('<br>');
+document.write(typeof (x));
+
+//arthmatic operators
+
+var m = 20;
+var n = 30;
+var o = m + n;
+var o = m - n;
+var o = m * n;
+var o = m / n;
+var o = m ** n;
+m++;
+m--;
+
+document.write('<br>');
+
+document.write(o);
+
+//assignment operators
+
+var k = 10;
+var l = 20;
+k+=l;
+k+=l;
+k=l;
+k*=l;
+k/=l;
+k%=l;
+k**=l;
+document.write('<br>');
+
+document.write(k);
+
+//google console command
+
+console.error("this is an error");
+console.warn("this is just a warning");
+console.time('test');
+console.log(['1','2','3']);
+console.table(['1','2','3']);
+console.timeEnd('test');  //shows how much time to take for excuting the task
+console.clear();
+
+//comparison operator
+ var a = 30;
+ var b = "10";
+ console.log(a === b);
+ console.log(a==b);
+ console.log(a != b);
+ console.log(a !== b);
+ console.log(a > b);
+ console.log(a < b);
+ console.log(a >= b);
+ console.log(a <= b);
+ console.log(null == undefined); //true
+ console.log(null === undefined);  //false
+
+/*if statement if(condition true)
+ {
+ 	statement
+}
+ else{
+ 	statement for false
+ }*/
+ var a = 30;
+ var b = 40;
+ if(a >= b){
+ 	document.write(true);
+ }
+ else{
+ 	document.write(false);
+ }
+  //logical oparators && and || or != not
+ var age = 20;
+ if(age >= 18 && age <= 22){
+ 	document.write("yes your are eligible");
+ }
+ var a = 10;
+ var b = 20;
+ if(a>=12 || b<=18){
+ 	document.write("please got for addtion");
+ }
+ if(a != b){
+ 	document.write("see the defferance");
+ }
+var name = "swati";
+var gender = 'female';
+if(gender == "female"){
+	document.write("hello miss" + name);
+}
+else{
+	document.write("hello mr."+name);
+}
+
+/*if(condition 1)
+{statement}
+else if(condition 2)
+{statement}
+else
+{statment}*/
+
+if(time<10){
+	document.write("good morning");
+}
+else if(time>10){
+	document.write("good afternoon");
+}
+else{
+	document.write("good night");
+}
+
+//ternary operator 
+//(condition)?true statement : false statement
+var x= 15;
+var b;
+(x==15) ? b="True" : b="false";
+b = "value is" + (x==15 ? b="True" : b="false");
+document.write(b);
+
+function getFee(isMember) {
+  return (isMember ? '$2.00' : '$10.00');
+}
+
+console.log(getFee(true));
+// Expected output: "$2.00"
+
+console.log(getFee(false));
+// Expected output: "$10.00"
+
+console.log(getFee(null));
+// Expected output: "$10.00"
+
+
+//switch statement
+/* switch(expresion)
+{
+case condition1: statement(s)
+break;
+case condition2: statement(s)
+break;
+case condition3: statement(s)
+break;
+default:statement(s)
+	}
+*/
+var day=1;
+switch (day){
+    case 0:
+	console.log("today is monday");
+	break;
+	case 1:
+	console.log("today is tuesday");
+	break;
+	case 2:
+	document.write("today is wedsday");
+	break;
+	case 3: case:4 case:5             //can add multiple cases
+	document.write("today is monday");
+	document.write("today is monday");
+	document.write("today is monday");
+	break;
+	case 6:
+	document.write("today is monday");
+	break;
+     default:
+     	document.write("enter valid number");
+
+}
+//alert box
+
+alert("Hello");
+var a =10;
+var b=20;
+if(a<b){
+	alert("b is greater than a");
+}
+else{
+	alert("value of b is ="+b);
+}
+
+//comfirm box
+
+var a = confirm("do you like");
+if (a){
+	alert("yes");
+}
+else{
+	alert("no");
+}
+
+//prompt box
+
+ var a = prompt("what is your age ?");
+ document.write(a);
+
+//functions reuse code
+
+function function_name(argument) { //function defination/declaration
+	// body...
+}
+function();    //function calling
+
+function hello(){
+	alert("hello all");
+}
+hello();  //can call multiple times
+hello();
+
+//fuctions with parameter
+/* function functionName(para1,para2)
+{
+statement
+}
+functionName(arg1,arg2);
+*/
+function hello(a,b){ 
+//set default value in arguments otherwise it show undefined
+	alert("a+b =");
+}
+hello(20,30);
+
+//functions with return 
+//value if fuction stament reuse in other place then don't print value just return  
+ function sum(a,b,c){
+ 	var s = a+b+c;
+ 	retur s;
+ }
+ var total = sum(10,20,30);
+ document.write(total);
+
+//global & local variable
+//global use inside also outside but local use only inside function
+
+//events
+/* click--onclick
+double click -- ondblclick
+right click--oncontextmenu
+mouse hover--onmouseenter
+mouse out--onmouseout
+mouse down--onmousedown
+mouse up--onmouseup
+key press--onkeypress   use only in form and body tag
+key up--onkeyup
+load--onload
+unload--onunload
+resize--onresize       windows event
+scroll--onscroll*/
+
+function abc(){
+	document.write("hello");
+}
+/*<body>
+<button onclick="abc()"> click me</button>
+<p oncontexmenu="abc()">click me</p>
+</body>*/
+
+// loops while loop ,do-while loop,for loop,for-in loop(objects),forEach loop(array) 
+//while loop
+ var a =1;
+ document.write("<ul>");
+ while(a<=10){
+ 	document.write("<li>" +"hello");
+ 	a=a+1;
+ }
+ document.write("</ul>");
+
+//do-while loop
+var a= 1:
+do{
+	document.write("hello");
+	a++;
+}while(a<=10)
+
+//for loop
+
+for(var a=1;a<=10;a++){
+	document.write("hello");
+}
+
+//break and contiune stament
+for(var a=1;a<=10;a++){
+	if(a==3){
+		document.write("hey");
+		continue;//continue for loop other statments
+		break;//now break on remaining statments
+	}
+	document.write("hello");
+}
+//find even or odd number program
+
+for(var a=1; a<=10;a++){
+	if(a % 2 == 0){
+		document.write(a+"<br>");   //for odd a%2 !== 0
+}}
+//nested loop
+for(var a=1;a<=100;a=a+10){
+	for(var b=a;b<a+10;b++){
+		document.write(b);
+	}
+	document.write("<br>")
+}
+//array
+var ary =[10,20,30,40,50];
+for(var a= 0;a<=4;a++){
+	document.write(ary[a]);
+}
+//create array
+var ary = new Array(); //empty array unlimited
+ary[0]=10;
+ary[1]="swati";
+for(var a= 0;a<=4;a++){
+	document.write(ary[a]);
+}
+//get value from user
+var ary = new Array(3);
+for(var g=0;g<=3;g++){
+	 ary[g]=prompt("enter value");
+}
+for(var a= 0;a<=4;a++){
+	document.write(ary[a]);
+}
+
+//multidiamensianal array
+
+var a =[
+	["swati",30,"shrau","amu"],
+	["swati",30,"shrau","amu"],
+	["swati",30,"shrau","amu"],
+	["swati",30,"shrau","amu"],
+	["swati",30,"shrau","amu"]
+	];
+for()
+document.write(a);
+a[0][0]="amol";
+delete a[0][0]; //delete array
+document.write(a);   //change value in array
+
+//array methods
+
+sort()        slice()			splice()
+reverse()		isArray()
+pop()			indexOf()
+push()			lastIndexOf()
+shift()			entries()
+unshift()		every()
+concat()		filter()
+join()			find()
+findIndex() 
+includes()
+some()
+forEach()
+toString()
+valueOf()
+fill()
+
+var a=["swati","amol","shrau"];
+document.write(a);
+a.sort();              //access array method by dot asending order
+document.write(a);
+a.reverse();          //reverse the asending order
+a.pop();              //delete last element in array
+a.push("rahul");     //add elememt in last
+a.shift();    //delete first element in array
+a.unshift("salam");    //add elemmt in first
+var a=["swati","amol","shrau"];
+var b=["swati","amol","shrau"];
+var d=21;
+var c =a.concat(b);
+var d=a.join("-");  //join elements without commas can add slash
+ var b=a.slice(1,2);     //cut miidle array  
+ //make new array by slice give index of slice(start,end) we can give -ve index also -3,-2,-1
+
+//splice(index,howmany,"new value",delet) add value in middle
+
+a.splice(2,0,"swati","amol");//from 2 add two element
+a.splice(2,2); //from index 2 two value delete
+ d=Array.isArray(d);  //check is array or number or string
+ //indexOf("sesrch item",start) find index of value in array
+
+var b=a.indexOf("swati",2);
+//if undefined value want to show index then gives -1
+
+var c=a.lastIndexOf("swati",1);
+ var c=a.includes("shrau");  
+ //find value in array exist or not if yes gives true or false reslt it is casesensetive exact match valu
+
+                /*use function in below methods */
+
+//some() checks if any of/atleats one value the elemnts in an array pass a test
+ //every() checks all value then only gives aaswer true
+var age=[10,20,30,40,50];
+document.write(age);
+var b=ages.every(check);
+
+function check(age){
+	return age >=18;
+}
+
+//find() retuns the value of the first element in an array that pass a test
+//findIndex() returns the index of the first element
+ var ages =[10,20,30,40];
+ document.write(ages);
+ var b =ages.find(checkAge);
+ document.write(b);
+ function checkAge(age){
+ 	return age <=18;
+ }
+
+//filter() creates an array filled with all array elements that pass a test filter(fucyion name) create new array
+var ages =[10,20,30,40];
+ document.write(ages);
+ var b =ages.filter(checkAge);
+ document.write(b);
+ function checkAge(age){
+ 	return age >=18;
+ }
+
+//toString() convert an array into a string and returns the result
+var a =["swati","amol","shrau"];
+a.toString();
+document.write(a);
+
+//valueOf() print array as it is returns array
+
+//fill() fill all the elements in the array with a static value
+var a =["swati","amol","shrau"];
+a.fill("ram");
+document.write(a);
+
+//forEach() want to work on each arrays value seperataly 
+
+var age=[10,20,30,40,40];
+a.forEach(function(value,index){
+	document.write(index + ":"+ value + "<br>");
+});
+
+/*       objects----- is standalone entity with propertie nad values   object is an unordered collection of keys-valuep pairs.                    */
+
+//in objects add properties also we can create array also we can create multiple funtions(methods)
+ var a={
+ 	name : "swati",
+ 	last : "makade",         //add properties
+ 	kid :"shrau",
+ 	age : 30,
+ 	hobby : ["dancing","handcraft","playing"], //add array 
+ 	salary : function(){       //add function
+ 		return 40000;
+ 	},
+ 	fullname : function(){
+ 		return this.name + ""+ this.last; 	//this shows the property belongs to object
+ 	},
+ 	living :{                  //create anothor object inside the object
+ 		'city' : "vadodara",
+ 		'country' : "india"
+ 	}
+
+ }                    //salary and fullname are methods of objects
+ console.log(a);
+ document.write(a.name);
+document.write(a.hobby[0]);
+document.write(a.salary());
+document.write(a.fullname());
+document.write(a.living.city);
+
+//create another object by new variable
+
+var a =new Object(); //must be capital object
+
+a.name="swati";
+a.last="makade";
+a.age=30;
+document.write(a.name);
+
+//array in object
+
+var student=[
+	{name:"swati",age:30},
+	{name:"swati",age:30},
+	{name:"swati",age:30},
+	];
+console.log(student);
+for(var a=0;a<=student.length;a++)
+{
+	document.write(student[a].name);
+}
+
+//const use in array and object
+
+const a=[10,20,30];
+console.log(a);
+a[1]=40;         //in const can not change value but using index one by one value can change in array
+
+const a ={
+	name:"swati",
+	last:"makade"
+};
+a.name="amol";        //assin new value in object still const variable is their
+console.log(a);
+
+//for-in loop use to print value in object
+
+var obj={
+	name:"swati",
+	last:"makade",
+	age:30
+};
+for(var key in obj){
+	document.write(key + ":"+obj[key]);
+}
+
+//array map() function ----use to do mathematical operations on exsting array and create new array
+//var a=[10,20,30];
+
+//a.map(function(){
+	statememt
+//});
+
+var a =[10,2,4,5,8];
+var b =a.map(test);
+document.write(b);
+function test(x){
+return x*10;
+}
+
+var student=[
+	{name:"swati",age:30},
+	{name:"swati",age:30},
+	{name:"swati",age:30},
+	];
+
+var b=student.map(test);
+document.write(b);
+function test(x){
+	return x.name;
+}
+
+/*             string methods       */
+
+var str="my name is swati is";
+var str2="my name is amol is";
+var str3="hello";
+var a=str.length;      //count lenght of string
+var a= str.toLowerCase();
+var a= str.toUpperCase();
+var a=str.includes("name");      //find word casesensetive true/false
+var a=str.startsWith();    //find first word in string gives true
+var a=str.endsWith();   //finf last word
+var a=str.search("is");    //returns index if not find retirn -1
+var a=str.match(/is/g);//output is,is g menas globaly find is word in array
+var a=str.indexOf("is");
+var a=str.lastIndexOf("is");
+var a=str.replace("amol","swati");  //regural function word/global/
+var a=str.trim();  //use in form remove execess space
+var a=str.charAt(3);  //return n
+var a=str.charCodeAt(3); //return ascii code of n
+var a=string.fromCharCode(65); //from actual keybord find 65 number value and return A
+var a=str.cancat(str2,str3);
+var a=str.split("  ");//remove space string become array
+var a=str.repeat(2);  //repeat 2 times
+var a=str.slice(5); //cut part of string
+var a=str.substr(3,5);//nam return
+var a=str.substring(3,5);// return na
+var a=str.toString();//convert into string
+var a=str.valueOf();  //print as it is string
+document.write(a);
+
+/*                 number methods             */
+ 
+ var a= "99";
+ var b="10.33";
+ var num=Number(a);  //convert string in to number
+ var num=parseInt(a); //return integer value
+ var num=parseFloat(b); //return float value
+ var num=isFinite(a);//return true if finite else false
+ var num=Number.isInteger(a);
+ let x let = 9.657;
+x.toFixed(1);   //9.6  return only one value after decimal 10.3
+ x.toPrecision(2); // 9.66   return only three value in whole number 10.3 
+ document.write(num);
+
+
+/*                        math methods           */
+
+ var a =math.ceil(5.2); // return upper value 6
+ var a =math.floor(5.2); //return lower value 5
+ var a =math.round(2.65);  //return 2 because of .65
+ var a =math.trunc(2.40);  //retrun integer value 2 
+ var a =math.max(4,5,68,29); //return max value 68
+ var a =math.min(-10.2,5,-2); //return min value -10
+ var a =math.sqrt(4);  //return sqaur root 2
+ var a =math.cbrt(125);  // return cube root 5
+ var a =math.pow(2,3);  //return 2*2*2=8
+ var a =math.random();  //return any random value
+ var a =math.abs(2+3);  //retrun absolute value 5
+ var a =math.PI;   //return 3.14
+ document.write(a);
+
+/*                                date methods        */
+
+var now = new Date();       //create an object
+var now = new Date("23 sep 2023");
+document.write(now);      //todays date with time retturn
+document.write(now.toDateString());    // return mon fed 11 2019
+document.write(now.getDate());     //retturn 11
+document.write(now.getFullYear()); //2023
+document.write(now.getMonth());   // rettun 0 for jan
+document.write(now.getDay());     //return 1 monday
+document.write(now.getMinutes());  // 25
+document.write(now.getSeconds());  //56
+document.write(now.getMilliSeconds());  //43
+var now = new Date();
+now.setdate(20);
+now.setFullYear(2020);
+now.setMonth('sep');
+now.setHours(2);
+now.setMinutes(13);
+now.setMilliSeconds(24);
+document.write(now);
+
+/*                        DOM document object module        */
+
+//how to target DOM object
+
+Id---document.getElementById(id);
+class name ----document.getElementByClassName(name);
+//IF P tag target in class then put index of p tag in class
+document.getElementByClassName("classname")[p tag index];
+tag name-------document.getElementByTagName(name);
+document.getElementByTagName("tagname")[indexof tag]; //ul,h1
+
+
+//dom targeting methods
+
+var element;
+element =document.all;
+element =document.head;
+element =document.body;
+element =document.title;
+element =document.links;
+element =document.links[0];
+element =document.images;
+element =document.images[0];
+element =document.forms;
+element =document.doctype;
+element =document.URL;
+element =document.domain;     //return domain abc.com
+element =document.baseURI;
+console.log(element);
+
+//get & set methods in DOM
+
+//in js by get method we get html,text and attribute
+var element;
+element =document.getElementById("content").innerText;
+element =document.getElementById("content").innerHTML;
+element =document.getElementById("content").getAttribute("class");
+element =document.getElementById("content").getAttributeNode("style").value;
+element =document.getElementById("content").attributes;
+element =document.getElementById("content").attributes[2].value;
+element =document.getElementById("content").attributes[2].name;
+console.log(element);
+//set value
+var element;
+document.getElementById("content").innerHTML = "<h1>wow</h1>";
+element =document.getElementById("content").setAttributes("class","xyz");
+element =document.getElementById("content").Attributes[1].value="xyz";
+
+element =document.getElementById("content").setAttribute("style","border:10px solid black");
+
+//remove attributes
+element =document.getElementById("content").removeAttribute("style");
+
+//queryselector -----document.querySelector(css selector) 1st element
+//querySelectorAll----document.querySelectorAll()  all element
+element = document.querySelector(".list");
+document.querySelectorAll(".list")[2].innerHTML;
+document.querySelectorAll("#header h1")[1].innerHTML;
+//no need to write get or set
+
+
+/*              css styling  methods             */
+
+//style method
+document.querySelector("#header")[1].style.color; 
+document.querySelector("#header").style.backGroundColor = "tan";
+
+//classname
+document.querySelector("#header").className;  //get class name return string
+document.querySelector("#header").className ="abc xyz"; //two class set
+
+//classList
+
+document.querySelector("#header").classList;    //return array
+
+document.querySelector("#header").classList.add("xyz","efg");  
+//add multiple class
+document.querySelector("#header").classList.remove("xyz");   
+//remove class
+
+//addEventListener
+
+//1st method
+document.getElementById("content").onClick=function name;
+element =document.getElementById("content").onclick=abc;
+function abc(){
+	document.getElementById("content").style.background ="green";
+}
+
+//2nd method we can add multiple events
+document.getElementById("id").addEventListener("click",function);
+document.getElementById("content").addEventListener("click",abc);
+function abc(){
+	document.getElementById("content").style.backgound="green";
+}
+
+document.getElementById("content").addEventListener("mouseenter",abc);
+document.getElementById("content").addEventListener("click",function(){
+	document.getElementById("content").style.border="10px solid red";
+});
+
+function abc(){
+	document.getElementById("content").style.backgound="green";
+}
+document.getElementById("content").addEventListener("mouseenter",abc,captureUse);//return true nd false
+
+//remove event by using removeEventListener
+
+//DOM classList methods--add,remove,toggel,lenght,items,contain
+var a =document.querySelector("#header").classList.lenght;
+console.log(a);
+var element;
+
+document.getElementById("content").addEventListener("click",abc);
+function abc(){
+	document.getElementById("content").classList.toggle("xyz");
+	document.getElementById("content").classList.item(1);//which class we want from classList
+	document.getElementById("content").classList.contain("mno");//check class exist in classList if yes then true else false
+	var a =document.getElementById("content").classList;
+}
+console.log(a);
+/*                   DOM TRAVERSAL METHODS        */
+
+<div>outer</div>
+<h1>outer</h1>
+<div>inner</div>
+<h1>inner</h1>
+<div>A</div>
+<div>B</div>
+<div>c/div>
+<div>d/div>
+<div>e/div>
+
+//paretElement and parentNodes
+
+var a =document.getElementById("inner").parentElement;
+document.body.parentElement;
+var a =document.getElementById("inner").parentElement.style.backgound="green";
+var a =document.getElementById("inner").parentNode;//parentElement if no parents their return null but parentNOde return something
+
+console.log(a);
+
+//childnode return all textnode and children returns only tags of html
+
+var a =document.getElementById("inner").children[1].innerHTML;
+// 1 div in childs
+document.getElementById("inner").children[0[.style.backgound="red";
+	console.log(a);
+
+var a =document.getElementById("inner").childNodes;
+var a =document.getElementById("inner").childNodes[3].innerHTML;//pick comments also all data in html by childNodes
+
+//firstElementChild
+var a =document.getElementById("inner").firstElementChild.innerHTML;
+var a =document.getElementById("inner").firstElementChild.style.backgound="red";
+var a =document.getElementById("inner").lastElementChild.innerHTML;
+var a =document.getElementById("inner").lastElementChild.style.backgound="green";
+var a =document.getElementById("inner").firstChild; //including comments space also
+var a =document.getElementById("inner").lastChild;
+console.log(a);
+
+//nextElementSibling and nextSibling
+
+var a =document.getElementById("child-c").nextElementsSibling;
+var a =document.getElementById("child-c").nextElementsSibling.innerHTML;
+var a =document.getElementById("child-c").nextElementsSibling.style.backgound="red";
+var a =document.getElementById("child-c").previousElementSibling;
+var a =document.getElementById("child-c").previousElementSibling.innerHTML;
+var a =document.getElementById("child-c").previousElementSibling.style.backgound="red";
+
+var a =document.getElementById("child-c").nextSibling; //count space
+var a =document.getElementById("child-c").nextSibling.innerHTML;
+var a =document.getElementById("child-c").nextSibling.style.backgound="red";
+var a =document.getElementById("child-c").previouSibling;
+var a =document.getElementById("child-c").previousSibling.innerHTML;
+var a =document.getElementById("child-c").previousSibling.style.backgound="red";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</body> 
+</html>

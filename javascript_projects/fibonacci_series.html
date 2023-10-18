@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fibonacci series code</title>
+</head>
+<body>
+<script type="text/javascript">
+	const number =prompt('Enter the number: ');
+	let n1 =0 ,n2=1,nextNumber;
+	console.log("Fibonacci series :");
+	for(let i=1;i<=number;i++){
+		console.log(n1);
+		nextNumber =n1 + n2;
+		n1 = n2;
+		n2=nextNumber;
+		
+	}
+</script>
+</body>
+</html>

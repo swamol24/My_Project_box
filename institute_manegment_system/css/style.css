@@ -1,0 +1,36 @@
+*{padding: 0;
+margin: 0;}
+body{
+	background-color: lightcyan;
+}
+#main{
+	background-color: white;
+	margin: auto;
+	width: 600px;
+	height: 100px;
+    }
+#header{
+	background-color: lightseagreen;
+	line-height: 2;
+}
+#header h1{
+	color: white;
+	text-align: center;
+}
+#table-form{
+	background-color: lightsalmon;
+	line-height: 2.5;
+}
+#table-data td{
+	margin-top: 30px;
+	padding: 5px;
+}
+#table-data th{
+	background:salmon;
+	padding: 5px;
+	color: white;
+
+}
+tr:nth-child(even){
+	background-color: #E6E7F3;
+}

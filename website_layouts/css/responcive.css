@@ -1,0 +1,114 @@
+
+    @media only screen and (max-width:600px){
+        img{
+            width: 100%;
+        }
+    .row justify-content-between  mb-5{
+        display: block;
+    }
+    .col-6{
+        width: 100%;
+    }
+}
+
+
+  /*  body{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+width: 100%;
+margin: auto;
+    }
+    .header{
+        background-color: #efefef;
+    }
+    .topheader{
+        background-color: black;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    }
+    .top img {
+        width: 50%;
+        padding: 12px;
+        margin-left: 146px;
+        height: 294px
+}     
+.left{
+    margin-left: 95px;
+    width: 100%;
+}   
+    .top p{
+        margin-left:1%;
+    }
+    .top{
+        width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+    .headerimg img {
+        margin-top: 1%;
+    margin-left: 3%;
+    width: 11%;
+    height: auto;
+    }
+    
+    .middle h2{
+        text-align: center;
+    }
+    .center{
+        display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    }
+    .middle img {
+        width: 68%;
+    
+    }
+    .middlebox{
+        
+    width: 100%;
+}
+    .middlebox h2{
+        margin-left: 33px;
+    }
+   
+    .middlebox button{
+    background-color: #69432a;
+    padding: 3px 20px 3px 20px;
+    color: white;
+    }
+    .product h2{
+    
+    
+        text-align: center;
+    }
+    .image{
+        display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+    .box{
+        width: 44%;
+    background-color: #efefef;
+    }
+    .bottom h3,p{
+        text-align: center;
+    }
+    .box p{
+        
+    padding: 0px 1px 0px 15px;
+    
+    }
+    .bottom{
+        display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+    .bottom img{
+       width:100%;
+    }
+}*/

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tic Tac Toe Board</title>
+  <style type="text/css">
+    
+#grid-container{
+      display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: aquamarine;
+    padding: 10px;
+width: 300px;
+height: 300px;
+margin: auto;
+}
+#grid-items{
+  background-color: coral;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid gainsboro;
+    font-size: 50px;
+}
+
+h1{
+  text-align: center;
+}
+
+  </style>
+
+</head>
+<body>
+  <h1>Tic Tac Toe Board</h1>
+  <div id="grid-container">
+    <div id="grid-items" onclick="ticTac(this)" ></div>
+    <div id="grid-items" onclick="ticTac(this)" ></div>
+    <div id="grid-items" onclick="ticTac(this)" ></div>
+    <div id="grid-items" onclick="ticTac(this)" ></div>
+    <div id="grid-items" onclick="ticTac(this)" ></div>
+    <div id="grid-items" onclick="ticTac(this)" ></div>
+    <div id="grid-items" onclick="ticTac(this)" ></div>
+    <div id="grid-items" onclick="ticTac(this)" ></div>
+    <div id="grid-items" onclick="ticTac(this)" ></div>
+  </div>
+<button onclick="event.stopPropagation()">Click me</button>
+  <!--<button id="btn" onclick="resetAll()">Restart</button>-->
+<script type="text/javascript">
+    var player ='x';
+    function ticTac(cell){
+       cell.innerHTML = player;
+       if(player == 'x'){
+           player = 'o';
+       }else{
+        player = 'x';
+       }
+     }
+       
+
+    let btns = document.querySelectorAll('.btn');
+    function resetAll(){
+      for(var i =1;i < 9;i++)
+      {
+       document.getElementById(i.toString("grid-items")).value=" "; 
+      }
+    }
+    
+  /* function resetAll(){  
+document.getElementById("grid-items").value = " ";
+
+//set turn to X
+document.getElementById("grid-items").value = "X";
+
+      }*/
+</script>
+</body>
+</html>

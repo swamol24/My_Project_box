@@ -1,0 +1,40 @@
+body{
+    margin:0px;
+    padding:0px;
+    }
+    .container{
+    width:92%;
+    margin-left: 239px;
+    margin-right: auto;
+
+    }
+    .box{
+    width:22%;
+    background-color:gray;
+    margin:40px 20px;
+    display:inline-block ;
+    
+    
+    }
+    .box img{
+    width:307px;
+    height:200px;
+    }
+    .box h3{
+    margin:5px 5px 0 0;
+    }
+    .box p{
+    font-size:16px;
+    height:60px;
+    padding:0 15px 15px 15px;
+
+    }
+    #btn{
+    background-color:pink;
+    padding:10px 15px;
+    color:black;
+    float:right;
+    }
+    #btn:hover{
+    background-color:lightslategray;
+    }

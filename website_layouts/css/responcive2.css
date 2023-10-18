@@ -1,0 +1,16 @@
+@media only screen and (max-width: 600px) {
+    body {
+      background-color:rgb(128, 117, 117);
+      
+    }
+    .section{
+      height:100%;
+      width:100%; 
+    }
+    .img3{
+        width: 247%;
+        position: absolute;
+        height: 600px;
+        margin-left: 71%;
+    }
+}

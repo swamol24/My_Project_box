@@ -1,0 +1,385 @@
+*{
+    box-sizing: border-box;
+  }
+  body{
+    margin: 0;
+  }
+  img{
+    width: 100%;
+  }
+  .container{
+    width: 1200px;
+    margin: auto;
+  }
+  .img3{
+    width: 100%;
+    position: absolute;
+    height: 600px;
+  
+  }
+  
+  .top-section{
+    position: relative;
+    height: 600px;
+  }
+  .row{
+    color: white;
+    padding: 10px 0px 2px 0px;
+  }
+  .col-8 i{
+    color: forestgreen;
+  }
+  .last{
+    background-color: forestgreen;
+    padding: 22px;
+    margin-right: -16px;
+  }
+  .col-8 a{
+    text-decoration: none;
+    color:white;
+    padding-left: 12px;
+  }
+  .col-8 a:hover{
+    color:green;
+  }
+  .row .col-4{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .col-4 select{
+    background: transparent;
+    font-family: revert;
+    color: white;
+    width: 60%;
+    border: none;
+  }
+  .col-4 select option{
+    background-color: #0b1c2e;
+    font-family: revert;
+    
+  }
+  
+  .block{
+    position: absolute;
+  }
+  .navbar{
+    background-color: antiquewhite;
+    padding: 12px 0px 12px 16px;
+  
+  }
+  .nav a{
+    padding-left: 13px;
+    text-decoration: none;
+    font-weight: bold;
+    color: navy;
+  }
+  .nav a:hover{
+    color:green;
+    text-decoration: none;
+  }
+  .logo{
+    width: 28%;
+  }
+  .block{
+    text-align: center;
+    margin-top: 85px;
+    margin-left: 110px;
+  }
+  .button a
+{
+  padding: 3px 20px 3px 20px;
+  
+  border: 1px solid;
+  color: white;
+  display: inline-block;
+
+  font-weight: bold;
+  text-align: center;
+}
+.button a:hover
+   { color: white;
+    text-decoration: none;
+    background-color: forestgreen;
+}
+.row1
+{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -184px;
+}
+.row1 .col-3{
+  padding: 21px 43px 7px 43px;
+  color:navy;
+  background-color: white;
+  text-align: center;
+}
+ .row1 .col-3 h3{
+  text-align: center;
+  font-size: x-large;
+ }
+ .row1 .col-3:hover{
+  background-image: url("https://www.pngmagic.com/product_images/blue-3d-background-vector-images.jpg");
+ color:white;
+}
+.col-3 i{
+  color: forestgreen;
+  font-size: 26px;
+  margin-bottom: 13px;
+}
+.img2{
+margin-top: -148px;
+}
+.box{
+  display: flex;
+    flex-wrap: wrap;
+    margin-top: 155px;
+}
+.box .col-4{
+  color: navy;
+    padding: 6px 2pc 6px 19px;
+}
+.two-nav{
+  background-size: cover;
+  background-image: url("https://www.nhh.no/globalassets/forskning/forskningsnytt/2016/november/banner-business-background-webpage-public-domain-pictures.jpg?factor=2&quality=90");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.nav-series li {
+  display: inline-block;
+    padding: 19px;
+    font-family: fantasy;
+    color: white;
+}
+li h2{
+  color: green;
+    font-size: 70px;
+}
+.rating i{
+  font-weight: 900;
+    color: green;
+    font-size: xxx-large;
+
+}
+.center{
+  text-align: center;
+  color:navy;
+}
+.center h3{
+  color:navy;
+  font-weight: bold;
+}
+.row6{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.row6 img{
+  border-radius: 40px;
+
+}
+.star img{
+  width: 10%;
+}
+.dropdown i{
+  color:white;
+}
+.row7{
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-block{
+  background-image: url("https://tse3.mm.bing.net/th?id=OIP.zBAaO__jggL6rJ6W9jM-owHaDT&pid=Api&P=0");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 31px;
+}
+.formblock{
+  background-color: #0c3261;
+  width: 281px;
+  
+  padding: 12px 1px 15px 25px;
+}
+.formblock h4{
+  color: white;
+    font-family: system-ui;
+}
+select{
+  width: 231px;
+    height: 43px;
+    font-family: revert;
+    margin-bottom: 6px;
+    padding: 10px;
+}
+input[type=text]{
+  display: block;
+    width: 231px;
+    height: 43px;
+    font-family: revert;
+    margin-bottom: 6px;
+    padding: 21px;
+    font-size: 15px;
+}
+.btn a{
+  padding: 9px 74px 8px 90px;
+    border: 1px solid;
+    color: white; 
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    margin-left: -11px;
+}
+
+.btn a:hover
+   { color: white;
+    text-decoration: none;
+    background-color: forestgreen;
+}
+
+.row8{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+.fourdiv h3{
+  text-align: center;
+  color: navy;
+}
+.row8 .col-3:hover
+{
+  text-align: left;
+background-image: none;
+color: navy;
+}
+.row8.col-3{
+  padding: 22px;
+}
+.col-12 img{
+  width: 15%;
+}
+.col-12{
+  text-align: center;
+}
+.row{
+  background-color: lightgrey;
+}
+.col-3 a{
+  font-size: small;
+  text-align: left;
+  font-weight: bold;
+}
+.col-3 a:hover{
+color:green;
+text-decoration: none;
+}
+.row8 p{
+  font-weight: bold;
+  font-size: 20px;
+}
+h6{
+  color: gray;
+}
+.row9{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.row9 .col-3:hover
+{
+  text-align: left;
+background-image: none;
+color: navy;
+}
+.footer-block{
+  background-color: #0e2034;
+  padding: 22px;
+}
+.nav3{
+  margin-top: 90px;
+}
+  .col-2{
+    color:lightgrey;
+  }
+  .col-2 a{
+    text-decoration: none;
+    color: lightgrey;
+  }
+  .col-2 a:hover{
+    text-decoration: none;
+    color:green;
+    
+  }
+  .col-4{
+    color:lightgrey;
+    display: block;
+  }
+   .col-4 a{
+    text-decoration: none;
+    color: lightgrey;
+    display: block;
+  }
+  .col-4 a:hover{
+    text-decoration: none;
+    color:green;
+    
+  }
+  
+  .row9 h4{
+    color: white;
+    margin-bottom: 21px;
+    margin-top: 39px;
+  }
+  .btn-2 a{
+    padding: 10px 139px 12px 90px;
+    border: 1px solid;
+    color: white;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .btn-2 a:hover
+     { color: white;
+      text-decoration: none;
+      background-color: forestgreen;
+  }
+  .row9 img{
+    padding: 21px;
+  }
+  .row9 .col-1{
+    margin-left: -52px;
+    margin-top: 48px;
+
+  }
+  .last-block{
+    background-color: #0b1c2e;
+  }
+  .row10{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    text-align: center;
+    padding: 7px;
+  }
+  .row10 .col-6 a{
+    color: lightgrey;
+    background-color: #233343;
+    padding: 9px 14px;
+  }
+  .row10 a:hover{
+    background-color: forestgreen;
+    color: lightgray;
+    text-decoration: none;
+  }
+  .col-5 a{
+    color: lightgrey;
+  }
+  .col-5 a:hover{
+  
+    color:forestgreen;
+    text-decoration: none;
+  }
+ 

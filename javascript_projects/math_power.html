@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function power()
+{
+  var base, exponent, power;
+  base = parseInt(document.getElementById("first").value);
+  exponent = parseInt(document.getElementById("second").value);
+  power = base**exponent;
+  document.getElementById("answer").value = power;
+}
+</script>
+</head>
+<body>
+
+<p>Enter the Base Number: <input id="first"></p>
+<p>Enter the Exponent Number: <input id="second"></p>
+<button onclick="power()">math power</button>
+<p>A<sup>B</sup> = <input id="answer"></p>
+
+</body>
+</html>

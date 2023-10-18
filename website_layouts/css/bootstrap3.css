@@ -1,0 +1,470 @@
+*{
+    box-sizing: border-box;
+  }
+  body{
+    margin: 0;
+  }
+  img{
+    width: 100%;
+  }
+  .container{
+    width: 1200px;
+    margin: auto;
+  }
+  .header-section{
+    background-color: #002147;
+    position: relative;
+    z-index: 1;
+  }
+  .row{
+    padding-top: 10px;
+    text-align: center;
+  }
+  .academics::after
+  {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background: rgba(0, 28, 5, 0.5);*/
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+    }
+
+  .col-2{
+    padding: 9px;
+  }
+  .col-2 i{
+    color:black;
+    background-color: yellow;
+    font-size: 23px;
+  }
+  strong{
+    color:white;
+    font-size: 20px;
+
+  }
+   .col-8 a{
+    color:white;
+    margin-left: 52px;
+  }
+  .col-8 a:hover{
+    color:yellow;
+    text-decoration: none;
+  }
+  .button a{
+    color: white;
+    background-color: navy;
+    padding: 10px;
+    font-weight: 600;
+  }
+  .button a:hover{
+    color:navy;
+    background-color: yellow;
+    text-decoration: none;
+  }
+  .headline{
+    text-align: center;
+    margin-top: 180px;
+    position: relative;
+    z-index: 1;
+  }
+  .headline p{
+    padding: 0px 180px 0px 180px;
+    color: white;
+  }
+  .headline h1{
+    font-family: revert;
+    color:white;
+  }
+  .academics img{
+    width: 100%;
+    position: absolute;
+  
+  }
+  .academics{
+    position: relative;
+  
+  }
+  .row1{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 323px;
+    position: relative;
+    z-index: 1;
+  }
+  .row1 .col-3{
+    background-color: #002147;
+    color: white;
+    padding: 26px 11px 15px 20px;
+    font-family: ui-monospace;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.row1 .col-3 i{
+  font-weight: 900;
+    color: yellow;
+    font-size: 27px;
+    margin-top: 15px
+}
+.welcome{
+  text-align: center;
+  color: #002147;
+  padding: 68px;
+}
+.welcome img{
+  width: 60%;
+}
+.courses ul{
+  display: flex;
+  flex-wrap: nowrap;
+  list-style-type: none;
+}
+.courses li{
+  padding: 8px;
+
+}
+.courses li p{
+  font-size: 14px;
+}
+.courses h2{
+  color: #002147;
+  padding: 1px 2px 18px 46px;
+}
+.courses{
+padding: 57px;
+  background-color: #f5f5f5;
+  color: navy;
+}
+.batch{
+display: flex;
+  flex-wrap: nowrap;
+  list-style-type: none;
+  margin-left: -40px;
+
+}
+.batch li:nth-child(1){
+    font-size: smaller;
+    border-right: 1px solid;
+    }
+   .batch li:nth-child(2){
+      font-size: smaller;
+    border-right: 1px solid;
+    }
+
+   
+span{
+  font-family: sans-serif;
+    font-size: 18px;
+}
+.video-tour{
+  background-image: url("https://thumbs.dreamstime.com/b/college-students-studying-together-library-5949521.jpg");
+  text-align: center;
+  color: white;
+  padding: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+.video-tour::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:url("https://images.unsplash.com/photo-1588421357574-87938a86fa28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80");
+  opacity: .7;
+}
+.middle{
+  color: white;
+    position: relative;
+    z-index: 1;
+}
+.facaulty{
+  display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    list-style-type: none;
+    color: darkblue;
+}
+.facaulty li{
+  padding: 10px;
+}
+.icons i{
+  background: orange;
+    padding: 5px 9px;
+    color: white;
+}
+.Lecturers{
+  padding: 60px;
+}
+.Lecturers h3{
+  margin-left: 48px;
+    color: navy;
+}
+
+.middle i{
+  font-weight: 400;
+    color: orange;
+    font-size: 60px;
+    padding: 50px;
+}
+.facaulty span{
+    font-family: sans-serif;
+    font-size: 15px;
+    display: block;
+}
+.row2{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+.news{
+list-style-type: none;
+}
+.news .col-6 h5{
+  font-size: 13px;
+  font-weight: bold;
+}
+.news .col-6 p{
+  font-size: 11px;
+}
+.news a{
+  color:orange;
+  font-size: 12px;
+}
+.news a:hover{
+  text-decoration: none;
+}
+.latest{
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+.latest h6{
+  font-size: 13px;
+  font-weight: bold;
+}
+.latest p{
+  font-size: 11px;
+}
+.latest .row3{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.latest .row3 a{
+  background-color: navy;
+  color: white;
+  padding:8px 20px;
+  font-weight: 600;
+}
+.latest .row3 a:hover{
+  background-color: yellow;
+  text-decoration: none;
+  color: navy;
+}
+.facaulty span{
+  font-size:12px;
+  font-weight: bold;
+  padding: 10px;
+}
+.row2{
+  color: navy;
+  padding: 36px;
+}
+.events{
+  list-style-type: none;
+}
+.col-7 span{
+  font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 10px
+}
+.events li{
+  margin-bottom: 53px;
+}
+.updates{
+  background-image: url("https://thumbs.dreamstime.com/b/college-students-studying-together-library-5949521.jpg");
+  text-align: center;
+  color: white;
+  padding: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+.updates::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:url("https://images.unsplash.com/photo-1588421357574-87938a86fa28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80");
+  opacity: .7;
+}
+.updates .row{
+  position: relative;
+  z-index: 1;
+  justify-content: space-evenly;
+}
+.updates .col-3{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.teachers {
+display: flex;
+flex-wrap: nowrap;
+list-style-type: none;
+}
+.teachers li{
+  padding: 11px;
+}
+.teachers span{
+  font-size: 72px;
+    display: table;
+     margin-top: -17px;
+}
+.teachers span::after{
+  content: " ";
+    width: 114%;
+    height: 2px;
+    background: olive;
+    display: block;
+}
+.reviews{
+  color:navy;
+  padding: 30px;
+}
+.reviews h3{
+  text-align: center;
+    padding: 22px;
+}
+.reviews span{
+  display: block;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+}
+.reviews small{
+  font-size: 12px;
+  text-align: left;
+  display: block;
+}
+.reviews .star img{
+  width: 18%;
+  display: block;
+}
+.reviews img{
+  width: 25%;
+}
+.reviews p{
+  font-size: 12px;
+}
+.col-8 ul{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: -52px;
+    margin-right: -10px;
+}
+.join-now .col-8{
+  background-color: #ffffff;
+
+}
+.col-8 li img {
+  height: 70px;
+  padding: 4px;
+  margin-bottom: -14px;
+}
+
+.join-now{
+  background-color: #fdc800;
+  padding: 63px;
+}
+.join-now .col-3{
+  background-color: #002147;
+}
+.join-now h3{
+  color: white;
+  padding: 20px;
+}
+.sponsers{
+  padding: 20px;
+}
+.sponsers .row{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+.footer-block{
+  background-color: #002147;
+  color: white;
+  padding: 36px;
+}
+.footer-block li{
+  padding: 5px;
+  font-size: 14px;
+}
+.footer-block .col-3{
+  margin-left: -72px;
+}
+.footer-block .col-2{
+  margin-left: -70px;
+}
+.flickr{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.flickr img{
+  margin-bottom: -18px;
+}
+.first i{
+  color:white;
+  border: 1px solid cadetblue;
+  padding: 5px;
+}
+.footer-block ul{
+  list-style-type: none;
+}
+
+.footer-block .col-2{
+  margin-top: 20px;
+}
+.footer-block input[type=text]{
+  background-color: #001a39;
+}
+.footer-block a{
+  color:white;
+}
+.footer-block a:hover{
+  text-decoration: none;
+  color: white;
+}
+.footer-block .second i{
+  color: orange;
+}
+.last-block{
+  background-color: #001a39;
+  color: white;
+}
+.last-block ul{
+  display: flex;
+  flex-wrap: nowrap;
+  list-style-type: none;
+}
+.last-block li{
+  padding: 5px;
+}
+.last-block .row{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content:space-around;
+}
+
+  

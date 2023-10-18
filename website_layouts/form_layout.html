@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Class Form</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<style type="text/css">
+		*{box-sizing: border-box;
+			}
+			body{
+				background: lightblue;
+			}
+			.container{
+				width: 900px;
+				margin: auto;
+				padding: 10px;
+                border: 2px solid lightcoral;
+                border-radius: 5px;
+                box-shadow:0px 6px 8px 10px  ;
+                background: linear-gradient(to bottom,purple,lightblue,cyan,skyblue);
+			}
+			#title{
+				background: floralwhite;
+				 border-radius: 5px;
+			}
+
+			label{
+				font-size: 15px;
+				font-weight: bold;
+			}
+			input{
+			font-size: 15px;
+			font-family: 'Flamenco', cursive;
+			 border-radius: 5px;
+			}
+	</style>
+</head>
+<body>
+	<div class="container">
+<form action="" method="">
+	<div id="title"><center><h1>Class Registration Form</h1></center></div>
+	<label for="fullname"> Write Fullname :</label>
+	<input type="text" name="fname" placeholder="First Name">
+	<input type="text" name="lname" placeholder="Last Name"><br/><br/>
+	<label for="details">Enter your contact details :</label>
+	<input type="tel" placeholder="0000-0000">
+	<input type="email" name="email-id" placeholder="enter Email Id">
+	<input type="password" name="password" placeholder="enter valid valid password"><br/><br/>
+	<label>How old are you :</label>
+	<input type="number" placeholder="select your age">
+	<input type="date" name="birth date" placeholder="enter date of birth">
+	Male
+	<input type="radio" name="rad" />
+	Female
+	<input type="radio" name="rad" /><br/><br/>
+	<label>Want to search anything by word :</label>
+	<input type="search" placeholder="Search.....">
+	<label>Want to search anything by URL :</label>
+	<input type="url" placeholder="Paste url..."><br/><br/>
+	<label for="courses">Which Course you want to join :</label>
+	<select name="Course" id="course" >
+		<optgroup label="Front End :">
+			<option value="html"> HTML 5</option>
+			<option value="css"> CSS 3</option>
+			<option value="js">Javascript</option>
+			<option value="jq">Jquery</option>
+			<option value="framework"> Anguler</option>
+			<option value="library"> React</option>
+		</optgroup>
+		<optgroup label="Back End :">
+			<option value="language"> PHP</option>
+			<option value="langauge"> Python</option>
+			<option value="langauge"> Mysql</option>
+			<option value="framework">Laravel</option>
+			<option value="library"> WordPress</option>
+		</optgroup>
+	</select><br/><br/>
+	<label>When you want to join class :</label>
+	<input type="week" name="week" placeholder="select week">
+	<input type="month" name="month" placeholder="select month"><br/><br/>
+	<label>Select time of class :</label>
+	<input type="time" name="time" placeholder="Sutaible timing of class"><br/><br/>
+	<label>Attach documents :</label>
+	<input type="file" name="file" placeholder="choose file...">
+	<input type="img" src="" name="photo" placeholder="passport size photo">
+	<input type="range" placeholder="college progress"><br/><br/>
+
+	<label>Form submiting time nd date :</label>
+	<input type="datetime-local" name="datetime"><br/><br/>
+	<label>If goes any wrong then you can fill again :</label>
+
+	<input type="reset" name="reset"><br/><br/>
+	<label>Choose your dress code color :</label>
+	<input type="color" name="color"><br/><br/>
+	<textarea rows="10" cols="60" placeholder="Any suggetions..."></textarea><br/><br/>
+	<fieldset>
+		<legend>Account setup</legend>
+		<label for="fname">first name:</label>
+			<input type="text" id="fname" name="fname" placeholder="first name" />
+			<label for="fname">last name:</label>
+			<input type="text" id="lname" name="lname"  placeholder="last name" />
+			<input type="number" name="number" placeholder="Valid Account Number  ">
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" />
+			<input type="submit" value="submit">
+	</fieldset><br/><br/>
+	<label>Are ready to join our institue :</label>
+	<input type="checkbox" />
+	<input type="sumbit"  value="Submit Your Form" />
+
+
+</form>
+</div>
+</body>
+</html>

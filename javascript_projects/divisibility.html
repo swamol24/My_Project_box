@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>divisibility rule</title>
+</head>
+<body>
+<script>
+	
+	/*const num1 =prompt("enter first number :");
+	const num2 =prompt("enter second number :");
+	for(let n =num1;n<=num2;n++){
+		if(n % 7 == 0){
+			
+			document.write("total numbers divisible by 7 is :"+n );
+			document.write("<br>");
+			
+			}
+			
+	}*/
+
+
+function countDivisibleBySeven(start, end) {
+  let counter = 0;
+  for(let i = start; i <= end; i++) {
+    if(i % 7 === 0) {
+      counter++;
+    }
+  }
+  
+  return counter;
+}
+
+//
+//const start = 1;
+//const end = 10;
+
+ const start = prompt("enter first number :");
+ const end = prompt("enter second number :");
+
+//console.log(countDivisibleBySeven(start,end));
+
+const divisibleCount = countDivisibleBySeven(start, end);
+document.write("total numbers divisible by 7 => " +divisibleCount);
+</script>
+</body>
+</html>

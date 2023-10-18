@@ -1,0 +1,229 @@
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+}
+img{
+	width: 100%;
+}
+.container{
+	width: 1200px;
+	margin: auto;
+}
+.header-block{
+	background-image: linear-gradient(rgba(183,126,157,0.8),rgba(103,119,106,0.8)),url("../image/background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: whitesmoke;
+	height: 100vh;
+}
+.row{
+	padding: 23px;
+}
+.col-2{
+	margin-top: -53px;
+}
+/*.clearfix:after{
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0px;
+	clear: both;
+}*/
+.col-10 ul{
+	display: flex;
+    flex-wrap: nowrap;
+    justify-content: end;
+    list-style: none;
+}
+.col-10 li{
+	margin-left: 26px;
+}
+.col-10 li a{
+	color: white;
+    text-transform: uppercase;
+    display: table;
+}
+.col-10 li a:hover{
+	text-decoration: none;
+}
+.col-10 li a:hover::after{
+	content: "";
+	width: 27%;
+	background: white;
+	height: 2px;
+	display: block;
+}
+.main-content{
+	position: absolute;
+	text-align: center;
+	top:50%;
+	padding: 0px 245px;
+}
+.button a{
+	background-color: white;
+    padding: 10px 35px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: 5px;
+}
+.button a:hover{
+	color:white;
+	background-color: lightskyblue;
+	text-decoration: none;
+}
+.about-us .col-6{
+	padding: 0px 20px;
+    font-size: 11px;
+}
+}
+#more{
+	display: none;
+}
+#myBtn{
+	background-color: white;
+    padding: 6px 25px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-left: 5px;
+}
+#myBtn:hover{
+	color:white;
+	background-image: linear-gradient(to right, #348F50 0%, #56B4D3 51%, #348F50 100%);
+
+}
+.about-us .col-6 ul{
+	list-style: none;
+    border: 1px solid lightgoldenrodyellow;
+    padding: 10px;
+}
+.question{
+	display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border-bottom: 1px solid linen;
+}
+#myDIV {
+  
+  text-align: center;
+
+}
+.updates{
+    background-image: linear-gradient(to left, rgba(0,300,200,0.5), rgba(0,70,200,0.5)),url(https://tse1.mm.bing.net/th?id=OIP.qJVHXg9ueHCfTNxfj7iadgHaE8&pid=Api&P=0);
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 70px;
+
+}
+.updates .row{
+	justify-content: space-around;
+    text-align: center;
+    color: white;
+}
+.updates ul{
+	list-style: none;
+    border: 1px solid;
+    padding: 23px 30px
+}
+.updates span{
+	font-size: 30px;
+    font-weight: 800;
+    display: table;
+}
+.updates span:after{
+	content: '';
+	background: white;
+	display: block;
+	width:50%;
+	height: 2px;
+	margin-left: 15px;
+
+}
+.why-us {
+	padding-bottom: 80px;
+}
+.why-us .row{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	color: white;
+}
+.why-us h1{
+	text-align: center;
+    text-transform: capitalize;
+    display: table;
+    margin: 30px auto;
+}
+.why-us h1:after{
+content: "";
+display: block;
+background: linear-gradient(to left, rgba(0,300,200,0.5), rgba(0,70,200,0.5));
+width: 30%;
+height: 4px;
+}
+.why-us .col-3{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://lgst.at/wp-content/uploads/2020/09/business-people-listen-to-the-analysis-of-the-comp-PNCXSUF.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+#hide{
+	display: none;
+}
+.bottom{
+	display: flex;
+    flex-wrap: nowrap;
+    margin-top: 149px;
+}
+.icon{
+	background-color: #253459;
+	padding: 10px;
+	margin-left: -14px;
+	width: 20%;
+}
+.label{
+	background: linear-gradient(to left, rgba(0,300,200,0.5), rgba(0,70,200,0.5));
+	width: 100%;
+	margin-right: -15px;
+
+}
+.label h4{
+	font-size: 19px;
+    text-transform: capitalize;
+    margin-top: 8px
+}
+.our-services {
+	background-image: url("https://wallpapercave.com/wp/wp2589222.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:center;
+}
+.twodiv{
+display:flex;
+flex-wrap: nowrap;
+}
+.firstdiv{
+	background-image:linear-gradient(to left, rgba(0,300,200,0.5), rgba(0,70,200,0.5)),url("https://wallpaperboat.com/wp-content/uploads/2019/11/building-07.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+padding: 65px;
+color: white;
+}
+.firstdiv p{
+    font-size: 13px;
+    font-weight: 600;
+}
+#color{
+	color: navy;
+}
+#add{
+	display: none;
+}
+.seconddiv{
+	display: flex;
+    flex-wrap: nowrap;
+}

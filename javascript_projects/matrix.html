@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chess board</title>
+
+<style type="text/css">
+  *{box-sizing: border-box;}
+.board{
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 400px;
+}
+.tile{
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+}
+.black{
+  background: black;
+  
+}
+</style>
+</head>
+<body>
+  Enter the value of m:
+<input id="m" placeholder="no.of rows" >
+
+Enter the value of n:
+<input id="n" placeholder="no.of colums" >
+
+<button onclick="createBoard()">Create Board</button>
+
+<div id="container" class="board"></div>
+
+
+<script>
+    function createBoard() {
+
+      var numOfRows = Number(document.getElementById("m").value);
+    var numOfColumns = Number(document.getElementById("n").value);
+
+    var board = document.getElementById("container");
+    board.innerHTML = " ";
+    board.style.width = 50 * numOfColumns;
+    board.style.height = 50 * numOfRows;
+    for (var i = 0; i < numOfRows * numOfColumns; i++)
+    {
+    var tile = document.createElement("div");
+    var rowNumber = i / numOfRows ;
+    if(Math.floor(rowNumber) % 2 === 0){
+  if (i % 2 !== 0 ){
+  tile.classList.add("black");
+}
+}else{
+  if(i % 2 === 0 ){
+      tile.classList.add("black");
+  }
+}
+tile.classList.add("tile");
+board.appendChild(tile);
+
+}
+  }
+</script>
+</body>
+</html>

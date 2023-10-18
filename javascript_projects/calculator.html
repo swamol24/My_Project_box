@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Calculator</title>
+	<style type="text/css">
+		body{
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: lightcoral;
+	font-size: 15px;
+	line-height: 1.5;
+	padding: 0;
+	margin: 0;
+}
+* {
+	box-sizing: border-box;
+}
+.container{
+	width:500px;
+	height: auto;
+        min-height:220px;
+	margin: 100px auto;
+	background-color: lightcyan;
+	border-radius: 5px;
+	padding-left: 20px;
+}
+input[type=text] {
+	width: 130px;
+	margin: auto;
+	outline: none;
+	padding: 3px 5px;
+	border: 2px solid #1073d0;
+	background-color: #f7f7f7;
+        border-radius: 2px;
+        color: #1073d0;
+        font-size: 17px;
+}
+	</style>
+</head>
+<body>
+	<div class="container">
+	<h2>Basic Calculator</h2>
+<p>Enter the First Number: <input type="text" id="first"></p>
+<p>Enter the second Number: <input type="text" id="second"></p>
+<p>Select Operator
+<select id="operators">
+	<option>+</option>
+	<option>-</option>
+	<option>*</option>
+	<option>/</option>
+	<option>%</option>
+</select>
+</p>
+<button onclick="Calculator()">Result  = </button>
+<input type="text" id="answer">
+</div>
+<script>
+function Calculator()
+{
+ var numOne = parseInt(document.getElementById("first").value);
+ var numTwo = parseInt(document.getElementById("second").value);
+ var oper = document.getElementById("operators").value;
+ 
+ switch(oper === '+'){
+ case '+':
+ 	document.getElementById("answer").value = numOne + numTwo;
+ 	break;
+ }
+
+ /* if(oper === '+') 
+  {
+    document.getElementById("answer").value = numOne + numTwo;
+}
+else if (oper === '-') 
+{
+  document.getElementById("answer").value   = numOne - numTwo;
+}
+else if (oper === '*')
+ {
+    document.getElementById("answer").value = numOne * numTwo;
+}
+else if(oper === '/')
+{
+    document.getElementById("answer").value = numOne / numTwo;
+}
+else{
+	document.getElementById("answer").value = numOne % numTwo;
+}
+*/
+  
+}
+
+</script>
+</body>
+</html>

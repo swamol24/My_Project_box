@@ -1,0 +1,75 @@
+@media only screen and (max-width: 600px) {
+    body {
+      background-color:rgb(128, 117, 117);
+    }
+    .top img {
+        width: 100%;
+    margin: 0;
+}        
+    .top p{
+        margin-left:1%;
+    }
+    .top{
+    width: 50%;
+    }
+    .headerimg img {
+        margin-top: -2%;
+    margin-left: 3%;
+    width: 11%;
+    height: auto;
+    }
+    .middle{
+        width: 50%;
+    }
+    .middle img {
+        width: 100%;
+        margin: 0px;
+    }
+    .middlebox{
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    .middlebox h2{
+        margin-left: 33px;
+    }
+    .middlebox p{
+        margin-left: 35px;
+    }
+    .middlebox h3{
+        margin-left: 39px;
+    }
+    .middlebox button{
+        text-align: left;
+    margin-left: 46px;
+    background-color: #69432a;
+    padding: 3px 20px 3px 20px;
+    color: white;
+    }
+    .product h2{
+        padding-top: 17px;
+    
+        text-align: left;
+    }
+    .box{
+        width: 55%;
+    
+    background-color: #efefef;
+    display: block;
+    border-style: groove;
+    margin-left: -21px;
+
+    margin-bottom: 15px;
+    }
+    .bottom h3,p{
+        margin-left: 70px;
+    }
+    .box p{
+        font-size: 16px;
+    padding: 0px 1px 0px 15px;
+    margin-left: 1px;
+    }
+    .bottom img{
+       width:100%;
+       margin:0px;
+    }
+}

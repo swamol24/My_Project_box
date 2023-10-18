@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>penalty jar</title>
+</head>
+<body>
+	<center id="penalty-value">0</center>
+<center><button id="btn">+10</button></center>
+<center><input type="number" id="custom-input" name="">
+<button id="custom-btn">Add Custom Value</button></center>
+<script type="text/javascript">
+	function add10(){
+var penaltyElement = document.getElementById("penalty-value");
+penaltyElement.innerText = Number(penaltyElement.innerText) + 10;
+	}
+	function addCustomValue(){
+		var penaltyElement = document.getElementById("penalty-value");
+		var inputValue = document.getElementById("custom-input").value;
+		var sum = Number(penaltyElement.innerText) + Number(inputValue);
+		penaltyElement.innerText = sum;
+	}
+	document.getElementById("btn").addEventListener("click",add10);
+	document.getElementById("custom-btn").addEventListener("click",addCustomValue);
+</script>
+</body>
+</html>
